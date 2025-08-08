@@ -1,9 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-	</head>
-	<body></body>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disparador de Email</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Disparador de Email</h1>
+    </header>
+    <main>
+      <section id="message">
+        <label for="message"> Escreva a sua mensagem </label>
+        <textarea name="message" id="message" rows="15" cols="62"></textarea>
+      </section>
+      <section id="formulario">
+        <form action="submit">
+          <fieldset>
+            <legend>Empresa</legend>
+            <label for="name">Nome</label>
+            <input type="text" name="nomeEmpresa" id="nomeEmpresa" />
+            <label for="email">Email</label>
+            <input type="email" name="emailEmpresa" id="emailEmpresa" />
+            <button type="submit">Cadastrar</button>
+          </fieldset>
+        </form>
+      </section>
+      <section id="empresas"></section>
+
+      <button type="button">Enviar</button>
+      <footer>&copy;StartGov</footer>
+
+      <script src="script.js"></script>
+    </main>
+  </body>
 </html>
